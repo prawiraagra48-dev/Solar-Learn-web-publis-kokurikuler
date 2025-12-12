@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Simple Browser - Lokal</title>
+  <style>
+    :root{--bg:#f6fbfb;--accent:#009879;--muted:#666}
+    html,body{height:100%;margin:0;font-family:Segoe UI, Tahoma, Geneva, Verdana, sans-serif;background:var(--bg)}
+    .toolbar{display:flex;gap:8px;padding:10px;align-items:center;background:#fff;border-bottom:1px solid #e6f0ef}
+    .toolbar input[type="text"]{flex:1;padding:8px;border:1px solid #d7eae3;border-radius:6px}
+    .toolbar button{padding:8px 10px;border-radius:6px;border:1px solid rgba(0,0,0,0.06);background:var(--accent);color:#fff;cursor:pointer}
+    .toolbar button.secondary{background:#fff;color:var(--accent);border:1px solid rgba(0,0,0,0.06)}
+    #view{width:100%;height:calc(100% - 58px);border:0;display:block;background:white}
+    .note{padding:8px 12px;color:var(--muted);font-size:0.9em}
+  </style>
+</head>
+<body>
+  <div class="toolbar">
+    <button id="back" class="secondary" title="Back">◀</button>
+    <button id="forward" class="secondary" title="Forward">▶</button>
+    <button id="reload" class="secondary" title="Reload">⟳</button>
+    <input id="url" type="text" value="http://localhost:8000" aria-label="Address bar" />
+    <button id="go">Buka</button>
+  </div>
+  <div class="note">Catatan: Beberapa situs mencegah pemuatan dalam iframe (X-Frame-Options). Gunakan alamat lokal seperti <code>http://localhost:8000</code>.</div>
+  <iframe id="view" src="http://localhost:8000" sandbox="allow-same-origin allow-scripts allow-forms allow-popups"></iframe>
+
+  <script>
+    const iframe = document.getElementById('view');
+    const urlInput = document.getElementById('url');
+    const backBtn = document.getElementById('back');
+    const fwdBtn = document.getElementById('forward');
+    const reloadBtn = document.getElementById('reload');
+    const goBtn = document.getElementById('go');
+
+    const historyStack = [];
+    let historyPos = -1;
+
+    function normalize(u){
+      if(!/^[a-z]+:\/\//i.test(u)) return 'http://' + u;
+      return u;
+    }
+
+    function navigate(url, push=true){
+      try{ url = normalize(url.trim()); }catch(e){ url = 'http://localhost:8000'; }
+      iframe.src = url;
+      urlInput.value = url;
+      if(push){
+        historyStack.splice(historyPos+1);
+        historyStack.push(url);
+        historyPos = historyStack.length - 1;
+      }
+      updateButtons();
+    }
+
+    function updateButtons(){
+      backBtn.disabled = historyPos <= 0;
+      fwdBtn.disabled = historyPos >= historyStack.length - 1;
+    }
+
+    backBtn.addEventListener('click', ()=>{ if(historyPos>0) { historyPos--; navigate(historyStack[historyPos], false); } });
+    fwdBtn.addEventListener('click', ()=>{ if(historyPos < historyStack.length-1){ historyPos++; navigate(historyStack[historyPos], false); } });
+    reloadBtn.addEventListener('click', ()=>{ iframe.src = iframe.src; });
+    goBtn.addEventListener('click', ()=> navigate(urlInput.value));
+    urlInput.addEventListener('keydown', e=>{ if(e.key === 'Enter') navigate(urlInput.value); });
+
+    // initialize
+    navigate(urlInput.value);
+  </script>
+</body>
+</html>

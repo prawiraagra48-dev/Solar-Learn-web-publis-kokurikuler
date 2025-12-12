@@ -1,0 +1,27 @@
+<!-- Kalkulator terpisah: dimuat dinamis oleh script.js -->
+<div class="calc-modal-backdrop" id="calcBackdrop" role="dialog" aria-hidden="true">
+  <div class="calc-modal" role="document" aria-label="Kalkulator Panjang Panel Surya">
+    <div class="calc-handle" style="display:flex;align-items:center;justify-content:space-between;margin-bottom:8px;">
+      <h3 style="margin:0;">Kalkulator Panjang Panel Surya</h3>
+      <button id="calcClose" class="btn-calc secondary" aria-label="Tutup kalkulator">✕</button>
+    </div>
+    <p style="font-size:0.9em;margin:6px 0 12px 0;color:#556;">Isi daya yang Anda butuhkan, lalu tekan <strong>Hitung</strong>.</p>
+    <div class="calc-row">
+      <label for="reqPower">Daya yang dibutuhkan (W)</label>
+      <input id="reqPower" type="number" min="0" value="1000" />
+    </div>
+    <div class="calc-row">
+      <label for="powerPerMeter">Daya per meter (W/m)</label>
+      <input id="powerPerMeter" type="number" min="1" value="200" />
+    </div>
+    <div class="calc-row">
+      <label for="powerPerPanel">Daya per panel (W) (opsional)</label>
+      <input id="powerPerPanel" type="number" min="1" placeholder="50" />
+    </div>
+    <div class="calc-actions">
+      <button id="calcCloseAlt" class="btn-calc secondary">Tutup</button>
+      <button id="calcCompute" class="btn-calc">Hitung</button>
+    </div>
+    <div id="calcResult" class="calc-result" style="display:none;"></div>
+  </div>
+</div>

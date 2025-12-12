@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Informasi lengkap tentang panel surya dan energi terbarukan dengan fitur interaktif dan terkini." />
+  <title>Panel Surya & Energi Terbarukan - Solusi Energi Berkelanjutan</title>
+  <link rel="stylesheet" href="script.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+<body>
+  <!-- Background Music -->
+  <audio id="background-music" loop>
+    <source src="audio/bc.mp3" type="audio/mpeg">
+  </audio>
+
+  <!-- Music Control Button -->
+  <div class="music-control-btn" id="music-toggle" title="Toggle Music">
+    <i class="fas fa-volume-up"></i>
+  </div>
+
+  <!-- Header dengan ikon -->
+  <header>
+    <video class="header-video" autoplay muted loop playsinline aria-hidden="true" src="video/[Hanwha Commercial] Solar Energy.mp4"></video>
+    <div class="header-overlay" aria-hidden="true"></div>
+    <div class="header-content">
+      <img src="foto/logo 2.png" alt="Panel Surya Logo" class="header-icon" />
+      <h1>Panel Surya & Energi Terbarukan</h1>
+      <p>Solusi Energi Berkelanjutan untuk Masa Depan yang Lebih Hijau</p>
+    </div>
+  </header>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="#pengertian" class="nav-link">
+        <i class="fas fa-info-circle"></i> Pengertian
+      </a>
+      <a href="#manfaat" class="nav-link">
+        <i class="fas fa-leaf"></i> Manfaat
+      </a>
+      <a href="#fitur" class="nav-link">
+        <i class="fas fa-star"></i> Fitur
+      </a>
+      <a href="#artikel" class="nav-link">
+        <i class="fas fa-newspaper"></i> Artikel
+      </a>
+      <a href="#kontak" class="nav-link">
+        <i class="fas fa-envelope"></i> Kontak
+      </a>
+      <button id="open-calculator" type="button" class="nav-link" aria-haspopup="dialog">
+        <i class="fas fa-calculator"></i> Kalkulator
+      </button>
+    </div>
+  </nav>
+
+  <div class="container">
+    <section id="pengertian" class="intro-section">
+      <div class="section-header">
+        <i class="fas fa-solar-panel"></i>
+        <h2>Apa Itu Panel Surya?</h2>
+      </div>
+      <div class="intro-content">
+        <div class="intro-text">
+          <p>Panel surya adalah perangkat yang mampu mengubah energi cahaya matahari menjadi energi listrik melalui proses fotovoltaik. Teknologi ini menjadi solusi ramah lingkungan untuk memenuhi kebutuhan energi.</p>
+          <div class="highlight-box">
+            <i class="fas fa-lightbulb"></i>
+            <span>Teknologi fotovoltaik telah berkembang pesat dan menjadi energi terbarukan pilihan utama di dunia</span>
+          </div>
+        </div>
+        <div class="intro-image">
+          <img src="foto/Bcg.png" alt="Panel Surya Background Illustration" class="solar-panel-svg" />
+        </div>
+      </div>
+    </section>
+
+    <section id="manfaat">
+      <div class="section-header">
+        <i class="fas fa-check-circle"></i>
+        <h2>Manfaat Penggunaan Panel Surya</h2>
+      </div>
+      <div class="benefits-grid">
+        <div class="benefit-item">
+          <div class="benefit-icon">
+            <i class="fas fa-sm fa-money-bill-wave"></i>
+          </div>
+          <h3>Hemat Energi & Biaya</h3>
+          <p>Kurangi tagihan listrik hingga 80% dengan memanfaatkan energi gratis dari matahari.</p>
+        </div>
+        <div class="benefit-item">
+          <div class="benefit-icon">
+            <i class="fas fa-sm fa-leaf"></i>
+          </div>
+          <h3>Ramah Lingkungan</h3>
+          <p>Energi bersih tanpa emisi karbon, berkontribusi pada kelestarian alam.</p>
+        </div>
+        <div class="benefit-item">
+          <div class="benefit-icon">
+            <i class="fas fa-sm fa-infinity"></i>
+          </div>
+          <h3>Sumber Berkelanjutan</h3>
+          <p>Energi matahari tidak terbatas dan akan tersedia selama miliaran tahun.</p>
+        </div>
+        <div class="benefit-item">
+          <div class="benefit-icon">
+            <i class="fas fa-sm fa-shield-alt"></i>
+          </div>
+          <h3>Daya Tahan Tinggi</h3>
+          <p>Panel surya tahan 25-30 tahun dengan perawatan minimal dan garansi komprehensif.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="fitur">
+      <div class="section-header">
+        <i class="fas fa-rocket"></i>
+        <h2>Fitur Tambahan Panel Surya</h2>
+      </div>
+
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feature-icon">
+            <i class="fas fa-chart-line"></i>
+          </div>
+          <h3>Monitoring Real-time</h3>
+          <p>Lacak penggunaan dan produksi listrik secara langsung melalui dashboard digital yang intuitif dan mudah dipahami.</p>
+          <div class="feature-badge">Teknologi IoT</div>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">
+            <i class="fas fa-battery-full"></i>
+          </div>
+          <h3>Sistem Penyimpanan Baterai</h3>
+          <p>Simpan energi listrik untuk digunakan saat malam hari atau cuaca mendung dengan kapasitas penyimpanan maksimal.</p>
+          <div class="feature-badge">Backup Power</div>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">
+            <i class="fas fa-cubes"></i>
+          </div>
+          <h3>Desain Modular</h3>
+          <p>Mudah menambah panel sesuai kebutuhan daya Anda tanpa perlu instalasi ulang yang rumit dan mahal.</p>
+          <div class="feature-badge">Scalable</div>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">
+            <i class="fas fa-home"></i>
+          </div>
+          <h3>Integrasi Smart Home</h3>
+          <p>Hubungkan panel surya dengan perangkat rumah pintar untuk optimalisasi energi otomatis dan efisiensi maksimal.</p>
+          <div class="feature-badge">AI Control</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="artikel" class="artikel-section">
+      <div class="section-header">
+        <i class="fas fa-newspaper"></i>
+        <h2>Artikel & Edukasi</h2>
+      </div>
+      <p class="section-intro">Baca artikel terbaru dan pelajari lebih lanjut tentang teknologi panel surya dan energi terbarukan</p>
+
+      <div class="articles-grid">
+        <article class="article-card">
+          <div class="article-image">
+            <img src="foto/Artikel.jpg" alt="foto artikel1" width="500" height="250"></i>
+          </div>
+          <div class="article-content">
+            <div class="article-date">
+              <i class="fas fa-calendar-alt"></i>
+              11 Desember 2025
+            </div>
+            <h3>Cara Kerja Panel Surya: Panduan Lengkap</h3>
+            <p>Pelajari cara kerja panel surya secara detail, mulai dari fotovoltaik hingga proses konversi energi matahari menjadi listrik yang dapat digunakan.</p>
+            <div class="article-tags">
+              <span class="tag">Teknologi</span>
+              <span class="tag">Dasar</span>
+            </div>
+            <a href="artikel-cara-kerja-panel-surya.html" class="read-more">Baca Selengkapnya <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </article>
+
+        <article class="article-card">
+          <div class="article-image">
+             <img src="foto/panel surya mini.jpg" alt="foto artikel2" width="500" height="250"></i>
+          </div>
+          <div class="article-content">
+            <div class="article-date">
+              <i class="fas fa-calendar-alt"></i>
+              9 Desember 2025
+            </div>
+            <h3>Penerapan Panel Surya Mini : Untuk Rumah Anda</h3>
+            <p>Panel surya mini kini semakin populer sebagai solusi energi alternatif untuk kebutuhan kecil dan portabel. Ukurannya yang ringkas membuatnya mudah digunakan di rumah, perjalanan, hingga aktivitas outdoor.</p>
+            <div class="article-tags">
+              <span class="tag">Tips & Trik</span>
+              <span class="tag">Minimalis</span>
+            </div>
+            <a href="artikel-panel-surya-mini.html" class="read-more">Baca Selengkapnya <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </article>
+
+        <article class="article-card">
+          <div class="article-image">
+            <img src="foto/orang msan.webp" alt="foto artikel" width="500" height="250"></i>
+          </div>
+          <div class="article-content">
+            <div class="article-date">
+              <i class="fas fa-calendar-alt"></i>
+              6 Desember 2025
+            </div>
+            <h3>Instalasi Panel Surya di Rumah: Langkah Demi Langkah</h3>
+            <p>Panduan lengkap dan aman cara memasang panel surya di rumah Anda, mulai dari perencanaan hingga tahap instalasi dan perawatan rutin.</p>
+            <div class="article-tags">
+              <span class="tag">Instalasi</span>
+              <span class="tag">DIY</span>
+            </div>
+            <a href="artikel-instalasi-panel-surya.html" class="read-more">Baca Selengkapnya <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </article>
+
+        <article class="article-card">
+          <div class="article-image">
+            <img src="foto/inves.webp" alt="foto artikel" width="500" height="250"></i>
+          </div>
+          <div class="article-content">
+            <div class="article-date">
+              <i class="fas fa-calendar-alt"></i>
+              5 Desember 2025
+            </div>
+            <h3>ROI Panel Surya: Investasi Jangka Panjang</h3>
+            <p>Analisis mendalam tentang pengembalian investasi panel surya, biaya operasional, garansi, dan bagaimana menghitung keuntungan finansial dalam jangka panjang.</p>
+            <div class="article-tags">
+              <span class="tag">Finansial</span>
+              <span class="tag">Investasi</span>
+            </div>
+            <a href="artikel-roi-panel-surya.html" class="read-more">Baca Selengkapnya <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </article>
+
+        <article class="article-card">
+          <div class="article-image">
+            <img src="foto/bersih.jpg" alt="foto artikel1" width="500" height="250"></i>
+          </div>
+          <div class="article-content">
+            <div class="article-date">
+              <i class="fas fa-calendar-alt"></i>
+              3 Desember 2025
+            </div>
+            <h3>Perawatan & Maintenance Panel Surya</h3>
+            <p>Panduan lengkap tentang cara merawat dan memelihara panel surya untuk memastikan performa optimal dan memperpanjang umur perangkat hingga 30 tahun.</p>
+            <div class="article-tags">
+              <span class="tag">Maintenance</span>
+              <span class="tag">Perawatan</span>
+            </div>
+            <a href="artikel-perawatan-panel-surya.html" class="read-more">Baca Selengkapnya <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </article>
+
+        <article class="article-card">
+          <div class="article-image">
+            <img src="foto/jenis.png" alt="foto artikel" width="500" height="250"></i>
+          </div>
+          <div class="article-content">
+            <div class="article-date">
+              <i class="fas fa-calendar-alt"></i>
+              1 Desember 2025
+            </div>
+            <h3>Jenis-Jenis Panel Surya: Panduan Lengkap untuk Memilih yang Tepat</h3>
+            <p>Panel surya telah menjadi solusi energi ramah lingkungan yang semakin populer di kalangan rumah tangga, industri, hingga perusahaan besar.</p>
+            <div class="article-tags">
+              <span class="tag">Tips and trick</span>
+              <span class="tag">condition</span>
+            </div>
+            <a href="artikel-jenis-panel-surya.html" class="read-more">Baca Selengkapnya <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </article>
+      </div>
+
+      <div class="articles-footer">
+        <button class="btn-load-more">
+          <i class="fas fa-refresh"></i> Lihat Artikel Lainnya
+        </button>
+      </div>
+    </section>
+
+    <section id="kontak" class="contact-section">
+      <div class="section-header">
+        <i class="fas fa-handshake"></i>
+        <h2>Hubungi Kami</h2>
+      </div>
+      <div class="contact-content">
+        <div class="contact-info">
+          <div class="contact-item">
+            <i class="fas fa-envelope"></i>
+            <div>
+              <h4>Email</h4>
+              <p><a href="mailto:info@panelsurya.com">info@panelsurya.com</a></p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <i class="fas fa-phone"></i>
+            <div>
+              <h4>Telepon</h4>
+              <p><a href="tel:+62812345678">+62 812 3456 78</a></p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <i class="fas fa-map-marker-alt"></i>
+            <div>
+              <h4>Lokasi</h4>
+              <p>Kediri, Indonesia</p>
+            </div>
+          </div>
+        </div>
+        <div class="contact-message">
+          <p>Jika Anda ingin mengetahui lebih banyak atau ingin berkonsultasi gratis tentang solusi panel surya untuk kebutuhan Anda, kami siap membantu.</p>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <footer>
+    <div class="footer-content">
+      <div class="footer-section">
+        <h4><i class="fas fa-sun"></i> Panel Surya Indonesia</h4>
+        <p>Memberikan solusi energi terbarukan terpercaya untuk masa depan yang berkelanjutan.</p>
+      </div>
+      <div class="footer-section">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#pengertian">Tentang Panel Surya</a></li>
+          <li><a href="#fitur">Fitur Unggulan</a></li>
+          <li><a href="#kontak">Hubungi Kami</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4>Ikuti Kami</h4>
+        <div class="social-icons">
+          <a href="#" title="Facebook"><i class="fab fa-facebook"></i></a>
+          <a href="#" title="Twitter"><i class="fab fa-twitter"></i></a>
+          <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 Panel Surya Indonesia. All rights reserved. | Powered by Renewable Energy</p>
+    </div>
+  </footer>
+
+  <!-- Floating Learning Module Icon -->
+  <div class="floating-icon-button" id="learning-module-btn" title="Modul Pembelajaran">
+    <i class="fas fa-book"></i>
+  </div>
+
+  <!-- Learning Module Modal -->
+  <div class="modal-overlay" id="learning-modal-overlay"></div>
+  <div class="learning-module-modal" id="learning-module-modal">
+    <div class="modal-header">
+      <h2>Modul Pembelajaran Panel Surya</h2>
+      <button class="modal-close-btn" id="close-learning-modal">
+        <i class="fas fa-times"></i>
+      </button>
+    </div>
+    <div class="modal-content">
+      <div class="modules-container">
+        <!-- Pengenalan -->
+        <div class="module-section">
+          <div class="module-header">
+            <i class="fas fa-lightbulb"></i>
+            <h3>Pengenalan</h3>
+          </div>
+          <div class="module-body">
+            <p><strong>Apa itu Panel Surya?</strong></p>
+            <p>Panel surya adalah perangkat semikonduktor yang mengubah energi cahaya matahari menjadi energi listrik melalui efek fotovoltaik. Terdiri dari sel-sel silikon yang tersusun dalam jaringan.</p>
+            <ul>
+              <li>Teknologi ramah lingkungan</li>
+              <li>Sumber energi terbarukan</li>
+              <li>Tahan hingga 25-30 tahun</li>
+              <li>Memerlukan perawatan minimal</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Penerapan -->
+        <div class="module-section">
+          <div class="module-header">
+            <i class="fas fa-cogs"></i>
+            <h3>Cara Kerja Panel Surya</h3>
+          </div>
+          <div class="module-body">
+            <p><strong>Cara Kerja Panel Surya</strong></p>
+            <p>Panel surya bekerja melalui proses konversi energi matahari menjadi listrik dengan tahapan berikut:</p>
+            <ol>
+              <li>Foton dari cahaya matahari mengenai sel surya</li>
+              <li>Elektron tereksitasi dan menciptakan arus listrik</li>
+              <li>Inverter mengkonversi DC menjadi AC</li>
+              <li>Listrik siap digunakan atau disimpan dalam baterai</li>
+            </ol>
+            <p style="margin-top: 15px;"><strong>Komponen Utama:</strong> Sel fotovoltaik, Inverter, Kabel, Mounting system</p>
+          </div>
+        </div>
+
+        <!-- Aplikasi -->
+        <div class="module-section">
+          <div class="module-header">
+            <i class="fas fa-home"></i>
+            <h3>Aplikasi</h3>
+          </div>
+          <div class="module-body">
+            <p><strong>Penggunaan Panel Surya di Kehidupan Sehari-hari</strong></p>
+            <p>Panel surya dapat diaplikasikan dalam berbagai aspek kehidupan:</p>
+            <ul>
+              <li><strong>Residensial:</strong> Rumah pribadi untuk listrik rumah tangga</li>
+              <li><strong>Komersial:</strong> Kantor, mall, pabrik untuk mengurangi biaya operasional</li>
+              <li><strong>Pertanian:</strong> Pompa air, irigasi otomatis</li>
+              <li><strong>Transportasi:</strong> Kendaraan listrik, lampu jalan</li>
+              <li><strong>Komunitas:</strong> Pembangkit listrik skala menengah</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal-footer">
+      <p>Pelajari lebih lanjut melalui artikel dan kalkulator kami</p>
+    </div>
+  </div>
+  
+  <script src="script.js"></script>
+</body>
+</html>
